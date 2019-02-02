@@ -39,6 +39,13 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.lmk.kill_timeout_ms=100 \
     ro.lmk.use_minfree_levels=true
 
+# IMS
+PRODUCT_PROPERTY_OVERRIDES += \
+    persist.dbg.ims_volte_enable=1 \
+    persist.dbg.volte_avail_ovr=1 \
+    persist.dbg.vt_avail_ovr=1 \
+    persist.dbg.wfc_avail_ovr=1
+
 # Media
 PRODUCT_PROPERTY_OVERRIDES += \
     media.aac_51_output_enabled=true \
