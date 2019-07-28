@@ -232,3 +232,7 @@ PRODUCT_PACKAGES_DEBUG += \
 # Google Camera
 #PRODUCT_PACKAGES += \
 #    PMGC
+
+# Dirac
+PRODUCT_PACKAGES += \
+    Dirac
