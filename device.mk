@@ -164,10 +164,6 @@ PRODUCT_PACKAGES += \
 # OTA
 #PRODUCT_PACKAGES += \
     Updates
-	
-# Placeholder
-PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/configs/placeholder:system/etc/placeholder
 
 # Power
 PRODUCT_PACKAGES += \
