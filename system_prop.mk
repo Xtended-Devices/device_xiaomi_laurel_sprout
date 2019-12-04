@@ -31,6 +31,13 @@ PRODUCT_PROPERTY_OVERRIDES += \
     persist.dpm.feature=1 \
     persist.vendor.cne.feature=1
 
+# set lmkd options
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.lmk.low_ram=false \
+    ro.lmk.kill_heaviest_task=true \
+    ro.lmk.kill_timeout_ms=100 \
+    ro.lmk.use_minfree_levels=true
+
 # Media
 PRODUCT_PROPERTY_OVERRIDES += \
     media.aac_51_output_enabled=true \
