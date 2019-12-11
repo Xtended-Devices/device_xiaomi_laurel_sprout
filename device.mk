@@ -113,12 +113,9 @@ PRODUCT_PACKAGES += \
     libvulkan
 	
 # FM
-#PRODUCT_PACKAGES += \
+PRODUCT_PACKAGES += \
     FM2 \
     libqcomfm_jni \
-    qcom.fmradio
-	
-#PRODUCT_BOOT_JARS += \
     qcom.fmradio
 
 # Fingerprint
