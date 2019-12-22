@@ -19,6 +19,9 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_p.mk)
 
+# Inherit from custom vendor
+$(call inherit-product, vendor/MiuiCamera/config.mk)
+
 # Build Official
 export export HAVOC_BUILD_TYPE=Official
 
