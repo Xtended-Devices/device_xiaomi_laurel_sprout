@@ -140,8 +140,9 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     init.qcom.rc \
     init.recovery.qcom.rc \
-    ueventd.qcom.rc
-	
+    ueventd.qcom.rc \
+    init.qcom.usb.sh
+
 # IMS
 PRODUCT_PACKAGES += \
     ims-ext-common \
