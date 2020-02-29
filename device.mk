@@ -100,10 +100,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES_DEBUG += \
     android.hardware.boot@1.0-impl.recovery \
     bootctl
-	
-# Bluetooth
-PRODUCT_PACKAGES += \
-    BluetoothResCommon
 
 # Device-specific settings
 PRODUCT_PACKAGES += \
