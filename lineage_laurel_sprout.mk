@@ -28,7 +28,7 @@ TARGET_BOOT_ANIMATION_RES := 720
 PRODUCT_NAME := lineage_laurel_sprout
 PRODUCT_DEVICE := laurel_sprout
 PRODUCT_BRAND := Xiaomi
-PRODUCT_MODEL := MI A3
+PRODUCT_MODEL := Mi A3
 PRODUCT_MANUFACTURER := Xiaomi
 
 BUILD_FINGERPRINT := "Xiaomi/laurel_sprout/laurel_sprout:10/QKQ1.190910.002/V11.0.7.0.QFQMIXM:user/release-keys"
