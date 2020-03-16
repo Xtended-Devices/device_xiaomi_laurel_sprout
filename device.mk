@@ -66,7 +66,7 @@ PRODUCT_ARTIFACT_PATH_REQUIREMENT_WHITELIST += \
 PRODUCT_ARTIFACT_PATH_REQUIREMENT_WHITELIST += \
     system/product/% \
     system/product_services/%
-	
+
 # GSI specific tasks on boot
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/skip_mount.cfg:system/etc/init/config/skip_mount.cfg
@@ -91,7 +91,7 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     audio.a2dp.default \
     libaacwrapper
-	
+
 PRODUCT_COPY_FILES += \
     frameworks/av/services/audiopolicy/config/a2dp_audio_policy_configuration.xml:$(TARGET_COPY_OUT_PRODUCT)/vendor_overlay/$(PRODUCT_TARGET_VNDK_VERSION)/etc/a2dp_audio_policy_configuration.xml \
     frameworks/av/services/audiopolicy/config/a2dp_in_audio_policy_configuration.xml:$(TARGET_COPY_OUT_PRODUCT)/vendor_overlay/$(PRODUCT_TARGET_VNDK_VERSION)/etc/a2dp_in_audio_policy_configuration.xml \
@@ -103,7 +103,7 @@ PRODUCT_COPY_FILES += \
 # ANT+
 PRODUCT_PACKAGES += \
     AntHalService
-	
+
 # Boot control
 PRODUCT_PACKAGES_DEBUG += \
     android.hardware.boot@1.0-impl.recovery \
@@ -119,7 +119,7 @@ PRODUCT_PACKAGES += \
     libqdMetaData \
     libqdMetaData.system \
     libvulkan
-	
+
 # FM
 PRODUCT_PACKAGES += \
     FM2 \
@@ -146,7 +146,7 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     ims-ext-common \
     ims_ext_common.xml
-	
+
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.telephony.ims.xml:system/etc/permissions/android.hardware.telephony.ims.xml
 
@@ -161,7 +161,7 @@ PRODUCT_PACKAGES += \
 # Lights
 PRODUCT_PACKAGES += \
     android.hardware.light@2.0-service.xiaomi_trinket
-	
+
 # Media
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/media_profiles_vendor.xml:system/etc/media_profiles_vendor.xml
@@ -169,10 +169,6 @@ PRODUCT_COPY_FILES += \
 # Net
 PRODUCT_PACKAGES += \
     netutils-wrapper-1.0
-
-# OTA
-#PRODUCT_PACKAGES += \
-    Updates
 
 # Power
 PRODUCT_PACKAGES += \
