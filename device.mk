@@ -170,10 +170,6 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     netutils-wrapper-1.0
 
-# Power
-PRODUCT_PACKAGES += \
-    power.qcom:64
-
 # Soong
 PRODUCT_SOONG_NAMESPACES += \
     device/xiaomi/laurel_sprout
