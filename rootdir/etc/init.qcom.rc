@@ -40,6 +40,10 @@ on property:vendor.post_boot.parsed=1
 
     # Enable PowerHAL hint processing
     setprop vendor.powerhal.init 1
+    
+    # Smart charging
+    chown system system /sys/class/power_supply/battery/input_suspend
+    chmod 0666 /sys/class/power_supply/battery/input_suspend
 	
 service vendor.ss_ramdump_local /vendor/bin/subsystem_ramdump
     class late_start
