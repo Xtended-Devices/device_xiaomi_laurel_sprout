@@ -19,8 +19,6 @@ BOARD_VENDOR := xiaomi
 
 DEVICE_PATH := device/xiaomi/laurel_sprout
 
-ALLOW_MISSING_DEPENDENCIES=true
-
 # A/B
 BOARD_BUILD_SYSTEM_ROOT_IMAGE := true
 
