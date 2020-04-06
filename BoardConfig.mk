@@ -149,16 +149,18 @@ BOARD_ROOT_EXTRA_SYMLINKS := \
 TARGET_PROVIDES_QTI_TELEPHONY_JAR := true
 
 # Sepolicy
-BOARD_PLAT_PRIVATE_SEPOLICY_DIR += $(DEVICE_PATH)/sepolicy/private
+#BOARD_PLAT_PRIVATE_SEPOLICY_DIR += $(DEVICE_PATH)/sepolicy/private
 
-BOARD_PLAT_PRIVATE_SEPOLICY_DIR += \
-    device/qcom/sepolicy/generic/private \
-    device/qcom/sepolicy/qva/private \
-    device/havoc/sepolicy/qcom/system
+#BOARD_PLAT_PRIVATE_SEPOLICY_DIR += \
+#    device/qcom/sepolicy/generic/private \
+#    device/qcom/sepolicy/qva/private \
+#    device/havoc/sepolicy/qcom/system
 
-BOARD_PLAT_PUBLIC_SEPOLICY_DIR += \
-    device/qcom/sepolicy/generic/public \
-    device/qcom/sepolicy/qva/public
+#BOARD_PLAT_PUBLIC_SEPOLICY_DIR += \
+#    device/qcom/sepolicy/generic/public \
+#
+#    device/qcom/sepolicy/qva/public
+BOARD_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/temp
 
 # Treble
 BUILD_WITHOUT_VENDOR := true
