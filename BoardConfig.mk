@@ -168,7 +168,6 @@ TARGET_PROVIDES_QTI_TELEPHONY_JAR := true
 BOARD_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/temp
 
 # Treble
-BUILD_WITHOUT_VENDOR := true
 BOARD_VNDK_VERSION := current
 
 # Verified Boot
@@ -182,3 +181,6 @@ TARGET_RECOVERY_DEVICE_MODULES := libinit_laurel_sprout
 
 # Inherit from the proprietary version
 -include vendor/xiaomi/laurel_sprout/BoardConfigVendor.mk
+
+# Include prebuilt vendor
+-include device/xiaomi/laurel_sprout-images/vendor-image.mk
