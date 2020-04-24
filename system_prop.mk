@@ -147,7 +147,3 @@ PRODUCT_PROPERTY_OVERRIDES += \
      ro.df.effect.conflict=1 \
      ro.vendor.qti.va_aosp.support=1 \
      sys.qca1530=detect
-
-# Build Official
-PRODUCT_PROPERTY_OVERRIDES += \
-    ro.havoc.maintainer=Prakaship78
