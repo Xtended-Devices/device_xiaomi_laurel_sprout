@@ -2,6 +2,6 @@
  <resources>
      <!-- Bottom margin size when fingerprint in display is active -->
      <dimen name="keyguard_indication_margin_bottom_fingerprint_in_display">128dp</dimen>
-     <dimen name="keyguard_indication_margin_bottom">192dp</dimen>
+     <dimen name="keyguard_indication_margin_bottom">124dp</dimen>
  </resources>
 
