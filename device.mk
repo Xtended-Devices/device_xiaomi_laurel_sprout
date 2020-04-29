@@ -230,3 +230,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES_DEBUG += \
     update_engine_client
 
+# Google Camera
+PRODUCT_PACKAGES += \
+    PMGC
