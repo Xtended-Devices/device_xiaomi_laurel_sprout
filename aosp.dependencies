@@ -1,0 +1,14 @@
+[  
+   {
+      "repository": "packages_apps_PixelLiveWallpaper",
+      "target_path": "packages/apps/PixelLiveWallpaper",
+      "branch": "ten",
+      "remote": "pixel-gitlab"
+   },
+   {
+      "repository": "nullbytepl/device_xiaomi_laurel_sprout-images",
+      "target_path": "device/xiaomi/laurel_sprout-images",
+      "branch": "ten",
+      "remote": "gitlab"
+   }
+]
