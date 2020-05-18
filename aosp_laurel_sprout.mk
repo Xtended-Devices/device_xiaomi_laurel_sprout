@@ -22,6 +22,11 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_p.mk)
 # Inherit some common EvolutionX stuff.
 $(call inherit-product, vendor/aosp/config/common_full_phone.mk)
 
+# EvolutionX Official Props
+EVO_MAINTAINER := oddlyspaced
+EVO_SUPPORT_URL := https://t.me/EvolutionXA3
+CUSTOM_BUILD_TYPE := OFFICIAL
+
 TARGET_BOOT_ANIMATION_RES := 720
 TARGET_GAPPS_ARCH := arm64
 TARGET_INCLUDE_WIFI_EXT := true
