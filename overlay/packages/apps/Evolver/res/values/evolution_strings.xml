@@ -15,6 +15,6 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-    <string name="evolution_about_maintainer">Joey Huab</string>
-    <string name="evolution_about_maintainer_summary">Filthy Frank\'s alter ego</string>
+    <string name="evolution_about_maintainer">Hardik Srivastava</string>
+    <string name="evolution_about_maintainer_summary">Retarded name, Retarded dev</string>
 </resources>
