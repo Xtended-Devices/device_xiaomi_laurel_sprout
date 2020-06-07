@@ -55,6 +55,9 @@ public:
     Return<bool> shouldBoostBrightness() override;
     Return<void> setCallback(const sp<IFingerprintInscreenCallback>& callback) override;
     Return<void> switchHbm(bool enabled) override;
+    Return<int32_t> getHbmOffDelay() override;
+    Return<int32_t> getHbmOnDelay() override;
+    Return<bool> supportsAlwaysOnHBM() override;
 
 private:
     sp<IDisplayFeature> xiaomiDisplayFeatureService;
