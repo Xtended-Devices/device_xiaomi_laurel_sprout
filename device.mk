@@ -135,17 +135,14 @@ PRODUCT_PACKAGES += \
     libqdMetaData.system \
     libvulkan
 
-# Fingerprint
-PRODUCT_COPY_FILES += \
-    vendor/aosp/config/permissions/vendor.lineage.biometrics.fingerprint.inscreen.xml:system/etc/permissions/vendor.lineage.biometrics.fingerprint.inscreen.xml
-
-PRODUCT_PACKAGES += \
-    lineage.biometrics.fingerprint.inscreen@1.1-service.xiaomi_trinket
-
 # FM
 PRODUCT_PACKAGES += \
     libqcomfm_jni \
     qcom.fmradio
+
+# Fingerprint
+PRODUCT_PACKAGES += \
+    lineage.biometrics.fingerprint.inscreen@1.0-service.xiaomi_trinket
 
 # HIDL
 PRODUCT_PACKAGES += \

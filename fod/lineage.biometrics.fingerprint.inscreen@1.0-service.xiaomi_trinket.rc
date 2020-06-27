@@ -1,8 +1,7 @@
-service fingerprint-inscreen-1-1 /system/bin/hw/lineage.biometrics.fingerprint.inscreen@1.1-service.xiaomi_trinket
-    interface vendor.lineage.biometrics.fingerprint.inscreen@1.1::IFingerprintInscreen default
+service fingerprint-inscreen-1-0 /system/bin/hw/lineage.biometrics.fingerprint.inscreen@1.0-service.xiaomi_trinket
+    interface vendor.lineage.biometrics.fingerprint.inscreen@1.0::IFingerprintInscreen default
     class hal
     user system
-    group system wakelock
     group system input
     shutdown critical
 

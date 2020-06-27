@@ -21,17 +21,12 @@
 #include <android-base/logging.h>
 #include <fstream>
 #include <cmath>
-#include <hardware_legacy/power.h>
-
-#include <cmath>
-#include <fstream>
 
 #define FINGERPRINT_ERROR_VENDOR 8
 
 #define COMMAND_NIT 10
 #define PARAM_NIT_FOD 1
 #define PARAM_NIT_NONE 0
-#define PARAM_NIT_630_FOD 1
 
 #define FOD_STATUS_PATH "/sys/class/touch/tp_dev/fod_status"
 #define FOD_STATUS_ON 1
@@ -49,14 +44,14 @@ static void set(const std::string& path, const T& value) {
     file << value;
 }
 
-}
+} // anonymous namespace
 
 namespace vendor {
 namespace lineage {
 namespace biometrics {
 namespace fingerprint {
 namespace inscreen {
-namespace V1_1 {
+namespace V1_0 {
 namespace implementation {
 
 FingerprintInscreen::FingerprintInscreen() {
@@ -84,24 +79,16 @@ Return<void> FingerprintInscreen::onFinishEnroll() {
     return Void();
 }
 
-Return<void> FingerprintInscreen::switchHbm(bool enabled) {
-    if (enabled) {
-        xiaomiDisplayFeatureService->setFeature(0, 11, 1, 3);
-    } else {
-        xiaomiDisplayFeatureService->setFeature(0, 11, 0, 3);
-    }
-    return Void();
-}
-
 Return<void> FingerprintInscreen::onPress() {
-    acquire_wake_lock(PARTIAL_WAKE_LOCK, LOG_TAG);
-    xiaomiFingerprintService->extCmd(COMMAND_NIT, PARAM_NIT_630_FOD);
+    xiaomiDisplayFeatureService->setFeature(0, 11, 1, 4);
+    xiaomiDisplayFeatureService->setFeature(0, 11, 1, 3);
+    xiaomiFingerprintService->extCmd(COMMAND_NIT, PARAM_NIT_FOD);
     return Void();
 }
 
 Return<void> FingerprintInscreen::onRelease() {
+    xiaomiDisplayFeatureService->setFeature(0, 11, 0, 3);
     xiaomiFingerprintService->extCmd(COMMAND_NIT, PARAM_NIT_NONE);
-    release_wake_lock(LOG_TAG);
     return Void();
 }
 
@@ -152,7 +139,7 @@ Return<void> FingerprintInscreen::setCallback(const sp<IFingerprintInscreenCallb
 }
 
 }  // namespace implementation
-}  // namespace V1_1
+}  // namespace V1_0
 }  // namespace inscreen
 }  // namespace fingerprint
 }  // namespace biometrics
