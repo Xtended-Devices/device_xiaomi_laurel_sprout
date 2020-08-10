@@ -19,10 +19,8 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_p.mk)
 
-# Inherit some common EvolutionX stuff.
+# Inherit some common Xtended stuff.
 $(call inherit-product, vendor/xtended/config/common_full_phone.mk)
-
-# EvolutionX Official Props
 
 TARGET_BOOT_ANIMATION_RES := 720
 TARGET_GAPPS_ARCH := arm64
@@ -39,11 +37,19 @@ PRODUCT_MANUFACTURER := Xiaomi
 
 PRODUCT_SHIPPING_API_LEVEL := 28
 
+# Build Fiingerprint props
 BUILD_FINGERPRINT := "Xiaomi/laurel_sprout/laurel_sprout:10/QKQ1.190910.002/V11.0.15.0.QFQMIXM:user/release-keys"
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
     PRIVATE_BUILD_DESC="qssi-user 10 QKQ1.190910.002 V11.0.15.0.QFQMIXM release-keys" \
     PRODUCT_NAME="laurel_sprout" \
     TARGET_DEVICE="laurel_sprout"
+
+# Xtended Official Props
+XTENDED_MAINTAINER := denomparkour
+XTENDED_BUILD_TYPE := OFFICIAL
+
+# Xtended Props
+EXTRA_FOD_ANIMATIONS := true
 
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
