@@ -15,5 +15,11 @@
     "repository":"denomparkour/device_xiaomi_laurel_sprout-images",
     "target_path":"device/xiaomi/laurel_sprout-images",
     "branch": "xq"
+  },
+  {
+    "remote": "gitlab",
+    "repository":"oddlyspaced/vendor_miuicamera",
+    "target_path":"vendor/MiuiCamera",
+    "branch": "ten"
   }
 ]
