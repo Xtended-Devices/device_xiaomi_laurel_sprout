@@ -20,6 +20,7 @@
     "remote": "gitlab",
     "repository":"oddlyspaced/vendor_miuicamera",
     "target_path":"vendor/MiuiCamera",
-    "branch": "ten"
+    "branch": "ten",
+    "clone-depth": "1"
   }
 ]
