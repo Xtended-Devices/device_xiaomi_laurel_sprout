@@ -12,8 +12,8 @@ on init
     mount none /system/etc/fs_none /vendor/etc/init/android.hardware.power@1.0-service.rc bind
     mount none /system/etc/fs_none /vendor/etc/powerhint.xml bind
 
+    mount none /system/etc/audio_effects.xml /vendor/etc/audio_effects.xml bind
     mount none /system/product/etc/audio_policy_configuration.xml /vendor/etc/audio/audio_policy_configuration.xml bind
-    mount none /system/product/etc/audio_policy_configuration.xml /vendor/etc/audio_policy_configuration.xml bind
 
 on boot
     chown system system /dev/input/event2
